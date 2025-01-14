@@ -1,21 +1,32 @@
----
-layout: default
-title: Home
----
-<h1>{{ "Hello World!" | downcase }}</h1>
-<p>Welcome to my personal website! My name is Jeffrey Do, I graduated from the University of Minnesota with a B.A in Computer Science.</p>
-<p>Currently, if you stumble on to this webpage, you can see that this website is barebones and part tutorial project. Hopefully in the future, you can see this website with a new look!</p>
-<li>
-  Here is what I am planning for this website:
-  <ul>
-    To showcase personal projects with in-depth explanations on the thought process.
-  </ul>
-  <ul>
-    A place to get started in web development.
-  </ul>
-  <ul>
-    A archive for all my future projects.
-  </ul>
-</li>
-<p>Hopefully, you should see changes to this website and learn more about me along the way!</p>
-<p>Thanks for coming by!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlazorSuit</title>
+    <base href="/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="BlazorSuit.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+
+</html>
